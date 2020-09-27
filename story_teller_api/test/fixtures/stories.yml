@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  opening_line: MyString
+  image: MyString
+  genre: MyString
+
+two:
+  opening_line: MyString
+  image: MyString
+  genre: MyString
