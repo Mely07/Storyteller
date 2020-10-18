@@ -33,8 +33,8 @@ To use Storyteller, follow these steps:
 ## Contributing to Storyteller
 To contribute to Storyteller, please see the [GitHub documentation](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request) on creating a pull request.
 
+## License
+This code is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT). 
+
 ## Contact
 If you want to contact me you can reach me at damely.tineo07@gmail.com.
-
-## License
-This code is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT. 
