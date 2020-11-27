@@ -8,6 +8,12 @@ class StoriesController < ApplicationController
     render json: @stories
   end
 
+  # GET /stories/top
+  def topStory
+    @story = Story.topStory
+    render json: @story
+  end
+
   # GET /stories/1
   def show
     render json: @story
