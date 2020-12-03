@@ -5,5 +5,11 @@ Rails.application.routes.draw do
   resources :stories
   
   resources :users
+
+  resources :sessions 
+
+  get 'logged_in', to: 'sessions#logged_in'
+
+  delete 'logout', to: 'sessions#logout'
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
