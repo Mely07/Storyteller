@@ -3,7 +3,7 @@ class CommentsController < ApplicationController
 
   # GET /comments
   def index
-    @comments = Comment.all
+    @comments = Comment.all.order("id ASC")
 
     render json: @comments
   end

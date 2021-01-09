@@ -3,7 +3,7 @@ class StoriesController < ApplicationController
 
   # GET /stories
   def index
-    @stories = Story.all
+    @stories = Story.all.order("id ASC")
 
     render json: @stories
   end
