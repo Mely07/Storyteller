@@ -1,7 +1,7 @@
 # Storyteller
 #### Demo:
-<a href="http://www.youtube.com/watch?feature=player_embedded&v=nYkO9-n-NKs
-" target="_blank"><img src="http://img.youtube.com/vi/nYkO9-n-NKs/0.jpg" 
+<a href="https://youtu.be/ip-35dBWi04
+" target="_blank"><img src="https://i9.ytimg.com/vi/ip-35dBWi04/mq3.jpg?sqp=COyNz4MG&rs=AOn4CLAZ8R-OApIEn1zqtkXcHffhcOXOWg"
 alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a>
 
 Storyteller is a single page story-building application built using CSS, Javascript, React and Redux libraries on the frontend and a Ruby on Rails built API backend. A user posts an opening line to a story alongside an image and subsequent users can then comment or add context to the story. With each new post, the story’s narrative is redirected in whichever way the new author chooses. Storyteller encourages creativity and collaboration and can be used as a learning tool for students enrolled in remote learning.
