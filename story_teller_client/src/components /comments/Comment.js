@@ -36,10 +36,10 @@ class Comment extends Component {
                         <strong> Posted by:</strong> {this.props.comment.author}
                         <br />
                         <span className="float-right">
-                            <i className="far fa-thumbs-up mr-1 text-success" onClick={(e) => this.handleLike(e)}>{this.props.comment.likes}</i>
-                            <i className="far fa-thumbs-down mx-1 text-danger" onClick={(e) => this.handleDislike(e)}>{this.props.comment.dislikes}</i>
-                            <i className="far fa-grin-squint-tears mx-1 text-primary" onClick={(e) => this.handleFunnyClick(e)}>{this.props.comment.funny_rating}</i>
-                            <i className="fas fa-ghost mx-1" onClick={(e) => this.handleScaryClick(e)}>{this.props.comment.scary_rating}</i>
+                            <i className="far fa-thumbs-up mr-1 text-success" style="cursor: pointer;" onClick={(e) => this.handleLike(e)}>{this.props.comment.likes}</i>
+                            <i className="far fa-thumbs-down mx-1 text-danger" style="cursor: pointer;" onClick={(e) => this.handleDislike(e)}>{this.props.comment.dislikes}</i>
+                            <i className="far fa-grin-squint-tears mx-1 text-primary" style="cursor: pointer;" onClick={(e) => this.handleFunnyClick(e)}>{this.props.comment.funny_rating}</i>
+                            <i className="fas fa-ghost mx-1" style="cursor: pointer;" onClick={(e) => this.handleScaryClick(e)}>{this.props.comment.scary_rating}</i>
                         </span>
                     </div>
                 </div>
