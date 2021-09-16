@@ -6,7 +6,6 @@ import { Redirect, Switch, Route } from 'react-router-dom'
 import Story from '../components /stories/Story';
 import Stories from '../components /stories/Stories';
 import { Nav } from 'react-bootstrap';
-import NavBar from '../components /Navbar'
 
 
 class StoriesContainer extends Component {
@@ -16,12 +15,10 @@ class StoriesContainer extends Component {
     }
 
     render() {
-
         if (this.props.loading) {
             return (<div>LOADING....</div>);
         }
         return (
-
             <div className="container-fluid mb-5">
                 { !this.props.user && <div className="container text-center mt-5"><h1 className="display-3">Uh Oh!</h1><br />
                     <img className="mx-auto" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSwzEeEPDRTGkqFkK82j8_f6aFLvJnpZpy3rw&usqp=CAU" alt="Open book in dim lighting"></img>
@@ -30,8 +27,9 @@ class StoriesContainer extends Component {
                     <div>
                         <h4 className="mt-2">Welcome, <strong><span>{this.props.user.username}</span></strong>!</h4>
                         <Switch>
+                            {/* HERE */}
                             <Route exact path={`${this.props.match.url}/:story_id`} render={routerProps => <Story {...routerProps} stories={this.props.stories.stories} />} />
-                            <Route path="/stories" render={routerProps => <Stories stories={this.props.stories.stories} user={this.props.user} topStory={this.props.topStory} />} />
+                            <Route path="/stories" render={<Stories stories={this.props.stories.stories} user={this.props.user} topStory={this.props.topStory} />} />
                             <Redirect from="*" to="/index.html" />
                         </Switch>
                     </div>

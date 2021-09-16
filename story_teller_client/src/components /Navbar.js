@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Navbar, Nav } from 'react-bootstrap';
 import { logout } from '../actions/authActions';
 import { connect } from 'react-redux';
-import { withRouter } from 'react-router-dom';
+import { withRouter } from 'react-router-dom'; //gives us access to location, match, history -> this.props.match.params.id
 
 class NavBar extends Component {
 
